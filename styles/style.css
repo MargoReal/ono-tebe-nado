@@ -22,8 +22,10 @@
     white-space: nowrap;
 }
 
-  .header__links-list-item { 
+  .header__links-list-item {
+      
     list-style: circle; 
+      
     margin-right: 13px;
 }
 
@@ -218,7 +220,8 @@
     height: 100%;
 }
 
-.card { 
+.card {
+    
     position: relative;
     z-index: 0;
     display: flex;

@@ -22,11 +22,11 @@
     white-space: nowrap;
 }
 
-  .header__links-list-item {
+  .header__links-list-item { 
       
-    list-style: circle; 
+list-style: circle; 
       
-    margin-right: 13px;
+margin-right: 13px;
 }
 
 .header__links-list-item_no-bullit {

@@ -1,7 +1,6 @@
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 105px);
     gap: 10px;
     padding: 92px 50px 96px;
     background-color: #FFFFFF;
@@ -19,7 +18,7 @@
     gap: 22px;
     list-style-position: outside;
     line-height: 21.6px;
-    white-space: nowrap;
+    text-wrap: nowrap;
 }
 
 .header__links-list-item {
@@ -30,6 +29,11 @@
 .header__links-list-item_no-bullit {
     list-style: none;
     margin-right: 13.48px;
+}
+
+.header__links-list-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 .header__link {
@@ -48,8 +52,7 @@
     justify-self: start;
     align-self: center;
     height: 105px;
-    margin-left: 20px;
-    
+    margin-left: 29px;
   }
 
 .header__logo-image {
@@ -69,7 +72,7 @@
 
 .header__address {
     grid-column: 3;
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 
@@ -80,7 +83,7 @@
 
 .cover {
     position: relative;
-    height: 769px;
+    min-height: 745px;
     z-index: 0;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -91,15 +94,14 @@
 
   .overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     inset: 0;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-  
-  }
+}
 
 .cover__title {
     display: flex;
@@ -116,7 +118,7 @@
     line-height: 100px;
     color: #FFFFFF;
     text-transform: uppercase;
-    margin-bottom: 147px;
+    margin-bottom: 134px;
 }
 
 .title-increased-line_height {
@@ -133,6 +135,7 @@
 
 .aligned-text_right {
     text-align: right;
+    margin-left: 580px;
 }
 
 .letter-spacing-extended {
@@ -147,7 +150,9 @@
     position: relative;
     z-index: 2;
     display: flex;
+    justify-content: right;
     flex-direction: row;
+    align-self: center;
     gap: 79px;
 }
 
@@ -158,7 +163,6 @@
     line-height: 28px;
     align-self: center;
     justify-self: start;
-    white-space: nowrap;
     word-spacing: 19.5px;
 
 }
@@ -209,7 +213,7 @@
 .lots__card-list-item {
     flex-grow: 1;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
 }
 
 .card-link {
@@ -279,7 +283,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 19px;
-    padding: 0 30px 180px 18px;
+    padding: 35px 30px 180px 18px;
 }
 
 .about__logo {
@@ -372,12 +376,12 @@
   }
   
   .footer__social-link {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     cursor: pointer;
   }
   
   .footer__social-icon {
-    height: 48px;
+    min-height: 48px;
   }
   
